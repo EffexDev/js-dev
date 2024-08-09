@@ -6,14 +6,23 @@ javascript: (() => {
                 let CSS = `
                     .heading {
                         position: fixed;
-                    }
-                    .heading_title {
-                        padding-right: 54.8em;
+                        left: 0px;
+                        right: 0px;
+                        top: 0px;
+                        background: #005082;
+                        padding-top: 40px;
+                        padding-left: 120px;
                     }
                     #update {
                         position: fixed;
-                        top: 15px;
-                        left: 1520px;
+                        top: 38px;
+                        left: 10px;
+                        width: 100px;
+                        background: #FFECC6;
+                    }
+                    .buttons {
+                        top: 3px;
+                        padding-right: 10px;
                     }
                 `;
     
