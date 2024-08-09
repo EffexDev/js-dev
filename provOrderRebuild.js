@@ -24,8 +24,22 @@ javascript: (() => {
                         top: 3px;
                         padding-right: 10px;
                     }
+                    .Bolt-Title {
+                        display: none;
+                    }
                 `;
-    
+
+                /*let boltons = document.querySelector("BOLTONS");
+                let test = document.indexOf("BOLTONS");
+                console.log(test);*/
+
+                    let xpath = null;
+                    xpath = "//div[text()='BOLTONS']";
+                    let test = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    test.classList.add("Bolt-Title");
+
+                    console.log(test);
+
                 let scriptEl  = document.createElement('style');
                 scriptEl.classList.add("CMSTCSS");
                 scriptEl.type = "text/css";
