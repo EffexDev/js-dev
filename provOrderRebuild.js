@@ -20,7 +20,7 @@ javascript: (() => {
                         width: 100px;
                         background: #FFECC6;
                     }
-                    .buttons {
+                   .buttons {
                         top: 3px;
                         padding-right: 10px;
                     }
@@ -28,11 +28,6 @@ javascript: (() => {
                         display: none;
                     }
                 `;
-
-                /*let boltons = document.querySelector("BOLTONS");
-                let test = document.indexOf("BOLTONS");
-                console.log(test);*/
-
                     let xpath = null;
                     xpath = "//div[text()='BOLTONS']";
                     let test = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
