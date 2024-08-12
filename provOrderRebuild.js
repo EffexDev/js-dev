@@ -31,11 +31,11 @@ javascript: (() => {
                     let xpath = null;
                     xpath = "//div[text()='BOLTONS']";
                     let bolton = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                    test.classList.add("hiddenElements");
+                    bolton.classList.add("hiddenElements");
 
                     xpath = "//div[text()=Marketing & Promotions]";
                     let marketing = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                    test.classList.add("hiddenElements");
+                    marketing.classList.add("hiddenElements");
 
                 let scriptEl  = document.createElement('style');
                 scriptEl.classList.add("CMSTCSS");
