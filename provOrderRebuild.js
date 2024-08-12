@@ -33,7 +33,7 @@ javascript: (() => {
                     let bolton = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                     bolton.classList.add("hiddenElements");
 
-                    xpath = "//div[text()=Marketing & Promotions]";
+                    xpath = "//div[text()='Marketing & Promotions']";
                     let marketing = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                     marketing.classList.add("hiddenElements");
 
