@@ -46,7 +46,7 @@ javascript: (() => {
                     marketing.classList.add("hiddenElements");
 
                     xpath = "//div[text()='Promotions']";
-                    let ipphone = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    let promotions = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                     marketing.classList.add("hiddenElements");
 
                     xpath = "//div[text()='New Email Address']";
