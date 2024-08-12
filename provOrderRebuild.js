@@ -24,16 +24,18 @@ javascript: (() => {
                         top: 3px;
                         padding-right: 10px;
                     }
-                    .Bolt-Title {
+                    .hiddenElements {
                         display: none;
                     }
                 `;
                     let xpath = null;
                     xpath = "//div[text()='BOLTONS']";
-                    let test = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                    test.classList.add("Bolt-Title");
+                    let bolton = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    test.classList.add("hiddenElements");
 
-                    console.log(test);
+                    xpath = "//div[text()=Marketing & Promotions]";
+                    let marketing = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    test.classList.add("hiddenElements");
 
                 let scriptEl  = document.createElement('style');
                 scriptEl.classList.add("CMSTCSS");
