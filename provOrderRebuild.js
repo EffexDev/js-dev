@@ -58,7 +58,11 @@ javascript: (() => {
 
                     xpath = "//td[text()='Timeslot Preference']";
                     let timeslot = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                    timeslot.classList.add("hiddenElements"); 
+                    timeslot.classList.add("hiddenElements");
+
+                    xpath = "//table[text()='Refer-a-friend']";
+                    let referAFriend = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    timeslot.classList.add("hiddenElements");
 
                 let scriptEl  = document.createElement('style');
                 scriptEl.classList.add("CMSTCSS");
