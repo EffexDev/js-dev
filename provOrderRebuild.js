@@ -36,6 +36,22 @@ javascript: (() => {
                     xpath = "//div[text()='Marketing & Promotions']";
                     let marketing = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                     marketing.classList.add("hiddenElements");
+                   
+                    xpath = "//div[text()='Fixed Phone']";
+                    let phone = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    marketing.classList.add("hiddenElements");xpath = "//div[text()='Fixed Phone']";
+
+                    xpath = "//div[text()='IP Phone']";
+                    let ipphone = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    marketing.classList.add("hiddenElements");
+
+                    xpath = "//div[text()='Promotions']";
+                    let ipphone = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    marketing.classList.add("hiddenElements");
+
+                    xpath = "//div[text()='New Email Address']";
+                    let emails = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    marketing.classList.add("hiddenElements");                 
 
                 let scriptEl  = document.createElement('style');
                 scriptEl.classList.add("CMSTCSS");
