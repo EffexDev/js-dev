@@ -24,7 +24,7 @@ javascript: (() => {
                         top: 3px;
                         padding-right: 10px;
                     }
-                    .timeslottable{
+                    #timeslottable{
                         display: none
                     }
                     .hiddenElements {
