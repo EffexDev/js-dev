@@ -60,7 +60,7 @@ javascript: (() => {
                     let timeslot = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                     timeslot.classList.add("hiddenElements");
 
-                    xpath = "//table[text()='Refer-a-friend']";
+                    xpath = "//td[text()='Refer-a-friend']";
                     let referAFriend = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                     timeslot.classList.add("hiddenElements");
 
