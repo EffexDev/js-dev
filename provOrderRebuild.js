@@ -20,9 +20,12 @@ javascript: (() => {
                         width: 100px;
                         background: #FFECC6;
                     }
-                   .buttons {
+                    .buttons {
                         top: 3px;
                         padding-right: 10px;
+                    }
+                    .timeslottable{
+                        display: none
                     }
                     .hiddenElements {
                         display: none;
@@ -39,19 +42,23 @@ javascript: (() => {
                    
                     xpath = "//div[text()='Fixed Phone']";
                     let phone = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                    marketing.classList.add("hiddenElements");xpath = "//div[text()='Fixed Phone']";
+                    phone.classList.add("hiddenElements");xpath = "//div[text()='Fixed Phone']";
 
                     xpath = "//div[text()='IP Phone']";
                     let ipphone = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                    marketing.classList.add("hiddenElements");
+                    ipphone.classList.add("hiddenElements");
 
                     xpath = "//div[text()='Promotions']";
                     let promotions = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                    marketing.classList.add("hiddenElements");
+                    promotions.classList.add("hiddenElements");
 
                     xpath = "//div[text()='New Email Address']";
                     let emails = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                    marketing.classList.add("hiddenElements");                 
+                    emails.classList.add("hiddenElements");   
+
+                    xpath = "//td[text()='Timeslot Preference']";
+                    let timeslot = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    timeslot.classList.add("hiddenElements"); 
 
                 let scriptEl  = document.createElement('style');
                 scriptEl.classList.add("CMSTCSS");
