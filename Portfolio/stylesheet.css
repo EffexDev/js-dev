@@ -1,6 +1,6 @@
-div {
+/* div {
     border: 2px solid red;
-}
+} */
 
 body {
     color: white;
@@ -9,13 +9,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
+.navBar {
     display: flex;
     position: fixed;
     background-color: black;
     min-width: 100%;
     justify-content: center;
-    gap: 10%;
+    gap: 5%;
+    transform: translate(-1%,0);
 }
 
 h1 {
@@ -57,6 +58,10 @@ h1 {
     justify-content: center;
 }
 
+.socialIcons {
+    max-width: 100px;
+}
+
 .name {
     color: blueviolet;
 }
@@ -95,8 +100,44 @@ h1 {
     z-index: 0;
 } 
 
+.techButton {
+    align-items: center;
+    appearance: none;
+    background-color: #575353;
+    border-radius: 24px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 150px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 150px;
+    will-change: transform,opacity;
+    z-index: 0;
+} 
+
 .technologies {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 300px;
+    gap: 20px;
 }
