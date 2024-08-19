@@ -24,21 +24,45 @@ javascript: (() => {
                         top: 3px;
                         padding-right: 10px;
                     }
-                    .Bolt-Title {
+                    #timeslottable{
+                        display: none
+                    }
+                    .hiddenElements {
                         display: none;
                     }
                 `;
-
-                /*let boltons = document.querySelector("BOLTONS");
-                let test = document.indexOf("BOLTONS");
-                console.log(test);*/
-
                     let xpath = null;
                     xpath = "//div[text()='BOLTONS']";
-                    let test = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                    test.classList.add("Bolt-Title");
+                    let bolton = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    bolton.classList.add("hiddenElements");
 
-                    console.log(test);
+                    xpath = "//div[text()='Marketing & Promotions']";
+                    let marketing = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    marketing.classList.add("hiddenElements");
+                   
+                    xpath = "//div[text()='Fixed Phone']";
+                    let phone = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    phone.classList.add("hiddenElements");xpath = "//div[text()='Fixed Phone']";
+
+                    xpath = "//div[text()='IP Phone']";
+                    let ipphone = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    ipphone.classList.add("hiddenElements");
+
+                    xpath = "//div[text()='Promotions']";
+                    let promotions = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    promotions.classList.add("hiddenElements");
+
+                    xpath = "//div[text()='New Email Address']";
+                    let emails = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    emails.classList.add("hiddenElements");   
+
+                    xpath = "//td[text()='Timeslot Preference']";
+                    let timeslot = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    timeslot.classList.add("hiddenElements");
+
+                    xpath = "//table[text()='Refer-a-friend']";
+                    let referAFriend = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    timeslot.classList.add("hiddenElements");
 
                 let scriptEl  = document.createElement('style');
                 scriptEl.classList.add("CMSTCSS");
